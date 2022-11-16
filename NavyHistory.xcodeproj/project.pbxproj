@@ -21,6 +21,11 @@
 		998C8FF6291ECBB500B5769F /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998C8FF5291ECBB500B5769F /* QuestionView.swift */; };
 		998C8FF8291ECBCB00B5769F /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998C8FF7291ECBCB00B5769F /* BottomTextView.swift */; };
 		998C8FFA291ECBD300B5769F /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998C8FF9291ECBD300B5769F /* ScoreView.swift */; };
+		99CA71192924AE4F0003E6A9 /* QInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA71182924AE4F0003E6A9 /* QInfo1.swift */; };
+		99CA711B2924AE5C0003E6A9 /* QInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA711A2924AE5C0003E6A9 /* QInfo2.swift */; };
+		99CA711D2924AE6E0003E6A9 /* QInfo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA711C2924AE6E0003E6A9 /* QInfo3.swift */; };
+		99CA71232924B1F90003E6A9 /* QInfo4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA71222924B1F90003E6A9 /* QInfo4.swift */; };
+		99CA71252924B2040003E6A9 /* QInfo5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA71242924B2040003E6A9 /* QInfo5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		998C8FF5291ECBB500B5769F /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		998C8FF7291ECBCB00B5769F /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 		998C8FF9291ECBD300B5769F /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		99CA71182924AE4F0003E6A9 /* QInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QInfo1.swift; sourceTree = "<group>"; };
+		99CA711A2924AE5C0003E6A9 /* QInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QInfo2.swift; sourceTree = "<group>"; };
+		99CA711C2924AE6E0003E6A9 /* QInfo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QInfo3.swift; sourceTree = "<group>"; };
+		99CA71222924B1F90003E6A9 /* QInfo4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QInfo4.swift; sourceTree = "<group>"; };
+		99CA71242924B2040003E6A9 /* QInfo5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QInfo5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 		998C8FE1291ECA3C00B5769F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				99CA71172924ADFB0003E6A9 /* QInfo */,
 				998C8FED291ECB3700B5769F /* ChoiceTextView.swift */,
 				998C8FEF291ECB4500B5769F /* GameView.swift */,
 				998C8FF1291ECB5500B5769F /* WelcomeView.swift */,
@@ -119,6 +130,18 @@
 				998C8FE6291ECA9D00B5769F /* Question.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		99CA71172924ADFB0003E6A9 /* QInfo */ = {
+			isa = PBXGroup;
+			children = (
+				99CA71182924AE4F0003E6A9 /* QInfo1.swift */,
+				99CA711A2924AE5C0003E6A9 /* QInfo2.swift */,
+				99CA711C2924AE6E0003E6A9 /* QInfo3.swift */,
+				99CA71222924B1F90003E6A9 /* QInfo4.swift */,
+				99CA71242924B2040003E6A9 /* QInfo5.swift */,
+			);
+			path = QInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,11 +221,16 @@
 				998C8FF2291ECB5500B5769F /* WelcomeView.swift in Sources */,
 				998C8FFA291ECBD300B5769F /* ScoreView.swift in Sources */,
 				998C8FF4291ECB9D00B5769F /* GameColor.swift in Sources */,
+				99CA71192924AE4F0003E6A9 /* QInfo1.swift in Sources */,
+				99CA71232924B1F90003E6A9 /* QInfo4.swift in Sources */,
+				99CA711B2924AE5C0003E6A9 /* QInfo2.swift in Sources */,
 				998C8FF8291ECBCB00B5769F /* BottomTextView.swift in Sources */,
 				998C8FE7291ECA9D00B5769F /* Question.swift in Sources */,
 				998C8FD4291EC82E00B5769F /* NavyHistoryApp.swift in Sources */,
 				998C8FE5291ECA8E00B5769F /* Game.swift in Sources */,
 				998C8FF0291ECB4500B5769F /* GameView.swift in Sources */,
+				99CA71252924B2040003E6A9 /* QInfo5.swift in Sources */,
+				99CA711D2924AE6E0003E6A9 /* QInfo3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

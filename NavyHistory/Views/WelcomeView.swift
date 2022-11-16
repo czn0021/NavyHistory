@@ -16,15 +16,41 @@ struct WelcomeView: View {
             ZStack {
                 mainColor.ignoresSafeArea()
                 VStack {
-                    Spacer()
                         VStack(alignment: .leading, spacing: 0) {
-                            Text("Select the correct answers to the following questions.")
+                            HStack {
+                                Spacer()
+                                Text("Navy History")
+                                .font(.largeTitle)
+                                .fontWeight(.heavy)
+                                .dynamicTypeSize(/*@START_MENU_TOKEN@*/.accessibility4/*@END_MENU_TOKEN@*/)
+                                
+                                Spacer()
+                            }
+                            Spacer()
+                                .frame(height: 15)
+                            HStack {
+                                Spacer()
+                                    .frame(width: 60)
+                                Text("By Christopher Noveron-Nunez, Jacob Blair, and Zhenhua Qiao")
+                                    .font(.subheadline)
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                                Spacer()
+                                    .frame(width: 60)
+                            }
+                            Spacer()
+                            HStack {
+                                Spacer()
+                                Text("Read about the topics and then select the correct answers to the respective question.")
                                 .font(.largeTitle)
                                 .bold()
-                                .multilineTextAlignment(.leading)
+                                .multilineTextAlignment(.center)
                                 .padding()
+                                Spacer()
+                            }
                         }
                         Spacer()
+                        .frame(height: 200)
                         NavigationLink(
                             destination: GameView(),
                             label: {

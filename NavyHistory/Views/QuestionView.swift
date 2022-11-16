@@ -13,30 +13,44 @@ struct QuestionView: View {
   let question: Question
  
   var body: some View {
-    VStack {
-      Text(question.questionText)
-        .font(.largeTitle)
-        .bold()
-        .multilineTextAlignment(.leading)
-      Spacer()
-        HStack {
-                ForEach(0..<question.possibleAnswers.count) { answerIndex in
-                  Button {
-                      viewModel.makeGuess(atIndex: answerIndex)
-                    print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
-                  } label: {
-                    ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
-                          .background(viewModel.color(forOptionIndex: answerIndex))
+      ScrollView {
+          VStack {
+              switch question.questionInfo {
+                case 1:
+                  QInfo1()
+                case 2:
+                  QInfo2()
+                case 3:
+                  QInfo3()
+                case 4:
+                  QInfo4()
+                default:
+                  QInfo5()
+              }
+              Spacer()
+              Text(question.questionText)
+                  .font(.largeTitle)
+                  .bold()
+                  .multilineTextAlignment(.leading)
+              Spacer()
+              HStack {
+                  ForEach(0..<question.possibleAnswers.count) { answerIndex in
+                      Button {
+                          viewModel.makeGuess(atIndex: answerIndex)
+                          print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
+                      } label: {
+                          ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
+                              .background(viewModel.color(forOptionIndex: answerIndex))
+                      }.disabled(viewModel.guessWasMade) // new line
                   }
-                  .disabled(viewModel.guessWasMade) // new line
-                }
-        }
-        if viewModel.guessWasMade {
-            Button(action: { viewModel.displayNextScreen() }) {
-                BottomTextView(str: "Next")
-            }
-        }
-    }
+              }
+              if viewModel.guessWasMade {
+                  Button(action: { viewModel.displayNextScreen() }) {
+                      BottomTextView(str: "Next")
+                  }
+              }
+          }
+      }
   }
 }
 
