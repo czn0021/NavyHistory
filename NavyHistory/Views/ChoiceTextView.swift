@@ -12,11 +12,12 @@ struct ChoiceTextView: View {
     let accentColor = GameColor.accent
     var body: some View {
         Text(choiceText)
-            .font(.body)
+            .font(.system(size: 12))
             .bold()
             .multilineTextAlignment(.center)
             .padding()
             .border(accentColor, width: 4)
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 

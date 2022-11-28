@@ -41,6 +41,9 @@ struct QuestionView: View {
                       } label: {
                           ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
                               .background(viewModel.color(forOptionIndex: answerIndex))
+                              .fixedSize(horizontal: false, vertical: true)
+                              .lineLimit(nil)
+                              .font(.body)
                       }.disabled(viewModel.guessWasMade) // new line
                   }
               }
