@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QInfo4: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("The Navy was first formed in 1775 for use during The Revolutionary War (although it was later temporarily disbanded). Which founding father was a huge proponent for a navy?")
     }
 }
 

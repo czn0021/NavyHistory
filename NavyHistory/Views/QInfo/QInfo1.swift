@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QInfo1: View {
     var body: some View {
-        Text("This is some info")
+        Text("What realm of the military does the United States Navy operate in?")
     }
 }
 

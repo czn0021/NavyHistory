@@ -13,50 +13,50 @@ struct Question: Hashable {
     let questionInfo: Int
     
     static var allQuestions = [
-        Question(questionText: "Test Question 1",
+        Question(questionText: "Question 1",
                  possibleAnswers: [
-                    "Test A 1",
-                    "Test A 2",
-                    "Test A 3",
-                    "Test A 4"
+                    "The Water",
+                    "The Land",
+                    "The Air",
+                    "All of the above"
                  ],
                  correctAnswerIndex: 3,
                  questionInfo: 1),
-        Question(questionText: "Test Question 2",
+        Question(questionText: "Question 2",
                  possibleAnswers: [
-                    "Test A 1",
-                    "Test A 2",
-                    "Test A 3",
-                    "Test A 4"
+                    "...Seals",
+                    "Specialized Elite Armed Lookouts",
+                    "Sea, Air, And Land",
+                    "Selectively Educated Advanced Leads"
                  ],
                  correctAnswerIndex: 2,
                  questionInfo: 2),
-        Question(questionText: "Test Question 3",
+        Question(questionText: "Question 3",
                  possibleAnswers: [
-                    "Test A 1",
-                    "Test A 2",
-                    "Test A 3",
-                    "Test A 4"
+                    "1890/Navy",
+                    "1915/Army",
+                    "1927/Navy",
+                    "1878/Army"
                  ],
                  correctAnswerIndex: 0,
                  questionInfo: 3),
-        Question(questionText: "Test Question 4",
+        Question(questionText: "Question 4",
                  possibleAnswers: [
-                    "Test A 1",
-                    "Test A 2",
-                    "Test A 3",
-                    "Test A 4"
+                    "John Hancock",
+                    "George Washington",
+                    "Charles Lee",
+                    "Alexander Hamilton"
                  ],
-                 correctAnswerIndex: 2,
+                 correctAnswerIndex: 1,
                  questionInfo: 4),
         Question(questionText: "Test Question 5",
                  possibleAnswers: [
-                    "Test A 1",
-                    "Test A 2",
-                    "Test A 3",
-                    "Test A 4"
+                    "USS Zumwalt",
+                    "USS Bainbridge",
+                    "USS Sampson",
+                    "USS Caldwell"
                  ],
-                 correctAnswerIndex: 2,
+                 correctAnswerIndex: 0,
                  questionInfo: 5)
     ]
 }

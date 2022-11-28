@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QInfo2: View {
     var body: some View {
-        Text("Too much info")
+        Text("The SEALS have been around since 1962 and serve as an advanced special operations unit for the Navy and are some of the most highly trained soldiers in the world. But what does SEAL stand for?")
     }
 }
 
