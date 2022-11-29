@@ -15,6 +15,12 @@ struct QuestionView: View {
   var body: some View {
       ScrollView {
           VStack {
+              Text(question.questionText)
+                  .underline()
+                  .font(.largeTitle)
+                  .bold()
+                  .multilineTextAlignment(.leading)
+              Spacer()
               switch question.questionInfo {
                 case 1:
                   QInfo1()
@@ -27,11 +33,6 @@ struct QuestionView: View {
                 default:
                   QInfo5()
               }
-              Spacer()
-              Text(question.questionText)
-                  .font(.largeTitle)
-                  .bold()
-                  .multilineTextAlignment(.leading)
               Spacer()
               HStack {
                   ForEach(0..<question.possibleAnswers.count) { answerIndex in
@@ -48,6 +49,20 @@ struct QuestionView: View {
                   }
               }
               if viewModel.guessWasMade {
+                  Spacer()
+                  switch question.questionInfo {
+                    case 1:
+                      AInfo1()
+                    case 2:
+                      AInfo2()
+                    case 3:
+                      AInfo3()
+                    case 4:
+                      AInfo4()
+                    default:
+                      AInfo5()
+                  }
+                  Spacer()
                   Button(action: { viewModel.displayNextScreen() }) {
                       BottomTextView(str: "Next")
                   }
