@@ -62,7 +62,6 @@ struct QuestionView: View {
                     default:
                       AInfo5()
                   }
-                  Spacer()
                   Button(action: { viewModel.displayNextScreen() }) {
                       BottomTextView(str: "Next")
                   }

@@ -13,7 +13,7 @@ struct Question: Hashable {
     let questionInfo: Int
     
     static var allQuestions = [
-        Question(questionText: "Question 1",
+        Question(questionText: "U.S. Navy",
                  possibleAnswers: [
                     "The Water",
                     "The Land",
@@ -22,7 +22,7 @@ struct Question: Hashable {
                  ],
                  correctAnswerIndex: 3,
                  questionInfo: 1),
-        Question(questionText: "Question 2",
+        Question(questionText: "Navy Seals",
                  possibleAnswers: [
                     "...Seals",
                     "Specialized Elite Armed Lookouts",
@@ -31,7 +31,7 @@ struct Question: Hashable {
                  ],
                  correctAnswerIndex: 2,
                  questionInfo: 2),
-        Question(questionText: "Question 3",
+        Question(questionText: "Army-Navy",
                  possibleAnswers: [
                     "1890/Navy",
                     "1915/Army",
@@ -40,7 +40,7 @@ struct Question: Hashable {
                  ],
                  correctAnswerIndex: 0,
                  questionInfo: 3),
-        Question(questionText: "Question 4",
+        Question(questionText: "Founding Fathers",
                  possibleAnswers: [
                     "John Hancock",
                     "George Washington",
@@ -49,7 +49,7 @@ struct Question: Hashable {
                  ],
                  correctAnswerIndex: 1,
                  questionInfo: 4),
-        Question(questionText: "Test Question 5",
+        Question(questionText: "Navy Destroyers",
                  possibleAnswers: [
                     "USS Zumwalt",
                     "USS Bainbridge",

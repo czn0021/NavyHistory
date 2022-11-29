@@ -61,7 +61,7 @@ struct WelcomeView: View {
                                         .bold()
                                         .padding()
                                     Spacer()
-                                }.background(accentColor)
+                                }.background(GameColor.accent)
                             })
                 }
                 .foregroundColor(.white)

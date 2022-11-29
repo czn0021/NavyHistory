@@ -29,7 +29,15 @@ struct ScoreView: View {
               NavigationLink(
                 destination: GameView(),
                 label: {
-                  BottomTextView(str: "Re-take Quiz")
+                    HStack {
+                        Spacer()
+                        Text("Re-take Quiz")
+                            .font(.body)
+                            .bold()
+                            .padding()
+                        Spacer()
+                    }
+                    .background(GameColor.accent)
                 })
       }
       .foregroundColor(.white)
